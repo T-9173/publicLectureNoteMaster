@@ -78,7 +78,7 @@ Lecture NoteMaster is a web application designed to simplify the process of taki
 
 1.  **Clone the repository:**
     ```bash
-    git clone [https://github.com/T-9173/publicLectureNoteMaster.git](https://github.com/T-9173/publicLectureNoteMaster.git)
+    git clone https://github.com/T-9173/publicLectureNoteMaster.git
     cd publiclecturenotemaster
     ```
 2.  **Install frontend dependencies:**
