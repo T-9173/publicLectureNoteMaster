@@ -22,38 +22,106 @@ Lecture NoteMaster is a web application designed to simplify the process of taki
 
 ## User Interface Overview
 
-Here are some screenshots showcasing the application's user interface:
+Here are some screenshots showcasing the application's user interface and key workflows:
 
-### Welcome and Email Verification
+### 1. Welcome and Email Verification
 
-The initial welcome page where users enter their email address for verification.
-[Welcome to Lecture Note-Master - Initial Page](publicLectureNoteMaster/images/image_welcome_page.png) 
+The initial welcome page of Lecture NoteMaster, prompting users to enter their Manhattan University email for access.
 
-The application provides feedback for invalid email formats, such as a non-Manhattan University email address or missing an '@' symbol.
-[Email Verification - Non-Manhattan Email](publicLectureNoteMaster/images/image_non_manhattan_email.png) 
-[Email Verification - Missing @ Symbol](publicLectureNoteMaster/images/image_missing_at_symbol.png) 
+<div align="center">
+    <img src="images/image_welcome_page.png" alt="Welcome to Lecture Note-Master - Initial Page" width="70%">
+    <br>
+    <em>Figure 1: Welcome Screen and Email Input.</em>
+</div>
+<br>
 
-Upon successful email submission, a verification email is sent to the user's inbox.
-[Email Verification - Sent Message](publicLectureNoteMaster/images/image_verification_sent.png) 
-[Email Verification - Inbox Email](publicLectureNoteMaster/images/image_inbox_email.png)
+The application provides immediate feedback for invalid email formats, ensuring only authorized users proceed.
 
-### Note Generation Page
+<div align="center">
+    <img src="images/image_non_manhattan_email.png" alt="Email Verification - Non-Manhattan Email" width="70%">
+    <br>
+    <em>Figure 2: Error for non-Manhattan University email address.</em>
+</div>
+<br>
 
-The application provides error messages for invalid inputs, such as an invalid URL format or a video exceeding the maximum duration.
-[Generate Notes from YouTube Video - Invalid URL Input](publicLectureNoteMaster/images/image_invalid_url.png) 
-[Generate Notes from YouTube Video - Video Too Long Error](publicLectureNoteMaster/images/image_video_too_long_error.png) 
+<div align="center">
+    <img src="images/image_missing_at_symbol.png" alt="Email Verification - Missing @ Symbol" width="70%">
+    <br>
+    <em>Figure 3: Error when the '@' symbol is missing from the email address.</em>
+</div>
+<br>
 
-While processing, a loading indicator shows the progress.
-[Generate Notes from YouTube Video - Loading](publicLectureNoteMaster/images/image_loading_notes.png)
+Upon successful email submission, a verification link is sent to the user's inbox, and a confirmation message is displayed on the application.
 
-### Generated Notes and Export
+<div align="center">
+    <img src="images/image_verification_sent.png" alt="Email Verification - Sent Message" width="70%">
+    <br>
+    <em>Figure 4: Confirmation message after sending verification email.</em>
+</div>
+<br>
 
-Once notes are generated, they are displayed to the user, with an option to save them as a PDF.
-[Generated Comprehensive Notes](publicLectureNoteMaster/images/image_generated_notes_done.png) 
-[Option to Save Notes as PDF](publicLectureNoteMaster/images/image_pdf_save_option.png)
+<div align="center">
+    <img src="images/image_inbox_email.png" alt="Email Verification - Inbox Email" width="70%">
+    <br>
+    <em>Figure 5: Example of the verification email received in the user's inbox.</em>
+</div>
+<br>
 
-A sample of the saved PDF notes.
-[Sample of Saved PDF Notes](publicLectureNoteMaster/images/image_pdf_notes_sample.png) 
+### 2. Note Generation Page
+
+After successful email verification, users are directed to the note generation page where they can input a YouTube video link and select their desired note type. The application provides clear error messages for invalid video inputs.
+
+<div align="center">
+    <img src="images/image_invalid_url.png" alt="Generate Notes from YouTube Video - Invalid URL Input" width="70%">
+    <br>
+    <em>Figure 6: Error for an invalid YouTube URL format.</em>
+</div>
+<br>
+
+<div align="center">
+    <img src="images/image_video_too_long_error.png" alt="Generate Notes from YouTube Video - Video Too Long Error" width="70%">
+    <br>
+    <em>Figure 7: Error indicating the video duration exceeds the allowed limit.</em>
+</div>
+<br>
+
+While the notes are being processed, a loading indicator provides real-time feedback on the generation progress.
+
+<div align="center">
+    <img src="images/image_loading_notes.png" alt="Generate Notes from YouTube Video - Loading" width="70%">
+    <br>
+    <em>Figure 8: Loading screen during note generation.</em>
+</div>
+<br>
+
+### 3. Generated Notes and Export
+
+Once the notes are generated, they are displayed directly within the application, offering a clean and readable format. Users also have the convenient option to save these notes as a PDF.
+
+<div align="center">
+    <img src="images/image_generated_notes_done.png" alt="Generated Comprehensive Notes" width="70%">
+    <br>
+    <em>Figure 9: Display of comprehensive notes after generation.</em>
+</div>
+<br>
+
+<div align="center">
+    <img src="images/image_pdf_save_option.png" alt="Option to Save Notes as PDF" width="70%">
+    <br>
+    <em>Figure 10: "Save as PDF" button for exporting generated notes.</em>
+</div>
+<br>
+
+A sample of how the exported notes appear in PDF format.
+
+<div align="center">
+    <img src="images/image_pdf_notes_sample.png" alt="Sample of Saved PDF Notes" width="70%">
+    <br>
+    <em>Figure 11: First page of the notes saved as a PDF.</em>
+</div>
+<br>
+
+---
 
 ## Tech Stack
 
