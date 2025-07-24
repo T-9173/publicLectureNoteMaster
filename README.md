@@ -20,6 +20,41 @@ Lecture NoteMaster is a web application designed to simplify the process of taki
     * Displays the generated notes in a clean, readable format.
     * Allows users to save the generated notes as a PDF.
 
+## User Interface Overview
+
+Here are some screenshots showcasing the application's user interface:
+
+### Welcome and Email Verification
+
+The initial welcome page where users enter their email address for verification.
+[Welcome to Lecture Note-Master - Initial Page](publicLectureNoteMaster/images/image_welcome_page.png) 
+
+The application provides feedback for invalid email formats, such as a non-Manhattan University email address or missing an '@' symbol.
+[Email Verification - Non-Manhattan Email](publicLectureNoteMaster/images/image_non_manhattan_email.png) 
+[Email Verification - Missing @ Symbol](publicLectureNoteMaster/images/image_missing_at_symbol.png) 
+
+Upon successful email submission, a verification email is sent to the user's inbox.
+[Email Verification - Sent Message](publicLectureNoteMaster/images/image_verification_sent.png) 
+[Email Verification - Inbox Email](publicLectureNoteMaster/images/image_inbox_email.png)
+
+### Note Generation Page
+
+The application provides error messages for invalid inputs, such as an invalid URL format or a video exceeding the maximum duration.
+[Generate Notes from YouTube Video - Invalid URL Input](publicLectureNoteMaster/images/image_invalid_url.png) 
+[Generate Notes from YouTube Video - Video Too Long Error](publicLectureNoteMaster/images/image_video_too_long_error.png) 
+
+While processing, a loading indicator shows the progress.
+[Generate Notes from YouTube Video - Loading](publicLectureNoteMaster/images/image_loading_notes.png)
+
+### Generated Notes and Export
+
+Once notes are generated, they are displayed to the user, with an option to save them as a PDF.
+[Generated Comprehensive Notes](publicLectureNoteMaster/images/image_generated_notes_done.png) 
+[Option to Save Notes as PDF](publicLectureNoteMaster/images/image_pdf_save_option.png)
+
+A sample of the saved PDF notes.
+[Sample of Saved PDF Notes](publicLectureNoteMaster/images/image_pdf_notes_sample.png) 
+
 ## Tech Stack
 
 ### Frontend
@@ -78,7 +113,7 @@ Lecture NoteMaster is a web application designed to simplify the process of taki
 
 1.  **Clone the repository:**
     ```bash
-    git clone https://github.com/T-9173/publicLectureNoteMaster.git
+    git clone [https://github.com/T-9173/publicLectureNoteMaster.git](https://github.com/T-9173/publicLectureNoteMaster.git)
     cd publiclecturenotemaster
     ```
 2.  **Install frontend dependencies:**
