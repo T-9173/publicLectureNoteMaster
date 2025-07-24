@@ -99,7 +99,7 @@ While the notes are being processed, a loading indicator provides real-time feed
 Once the notes are generated, they are displayed directly within the application, offering a clean and readable format. Users also have the convenient option to save these notes as a PDF.
 
 <div align="center">
-    <img src="images/image_generated_notes_done.png" alt="Generated Comprehensive Notes" width="70%">
+    <img src="images/generated_notes_done_image.png" alt="Generated Comprehensive Notes" width="70%">
     <br>
     <em>Figure 9: Display of comprehensive notes after generation.</em>
 </div>
