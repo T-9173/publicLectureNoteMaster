@@ -28,7 +28,7 @@ function Application() {
 
   const handleRadioChange = (e) => setNoteType(e.target.value);
 
-  const API_KEY = process.env.youtubeAPI;
+  const API_KEY = process.env.REACT_APP_youtubeAPI;
 
   const extractVideoID = (url) => {
     const regex = /(?:https?:\/\/(?:www\.)?(?:youtube\.com\/.*[?&]v=|youtu\.be\/))([a-zA-Z0-9_-]{11})/;
@@ -44,16 +44,21 @@ function Application() {
       const data = await response.json();
       if (data.items && data.items.length > 0) {
         const video = data.items[0];
-        const duration = video.contentDetails.duration;
+        const duration = video.contentDetails.duration; 
+
         const durationMatch = duration.match(/PT(?:(\d+)H)?(?:(\d+)M)?(?:(\d+)S)?/);
-        const hours = durationMatch[1] ? parseInt(durationMatch[1], 10) : 0;
-        const minutes = durationMatch[2] ? parseInt(durationMatch[2], 10) : 0;
-        const totalMinutes = hours * 60 + minutes;
-        if (totalMinutes > 90) {
-          setMessage("Video duration exceeds 1.5 hours. Please select a shorter video.");
-          return false;
+
+        const hours = parseInt(durationMatch[1] || 0);
+        const minutes = parseInt(durationMatch[2] || 0);
+        const seconds = parseInt(durationMatch[3] || 0);
+
+        const totalSeconds = (hours * 3600) + (minutes * 60) + seconds;
+
+        if (totalSeconds > 5400) {
+            setMessage("Video duration exceeds 1.5 hours. Please select a shorter video.");
+            return false;
         } else {
-          return true;
+            return true;
         }
       } else {
         setMessage("Invalid YouTube video link.");

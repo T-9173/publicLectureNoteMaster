@@ -35,7 +35,6 @@ app.post("/send-verification-email", (req, res) => {
   const verificationLink = `http://localhost:5000/verify/${token}`;
 
   verificationTokens[token] = email;
-
   const mailOptions = {
     from: "lectureNoteMaster@gmail.com",
     to: email,
